@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Lex Murphy</title> <!-- Titre de la fenêtre -->
+	<meta charset="utf-8"> <!-- Indique au navigateur le charset -->
+	<link rel="stylesheet" type="text/css" href="new.css" > <!-- lien vers le fichier css externe -->
+	<link rel="stylesheet" media="screen and (max-width: 1280px)" type="text/css" href="mobile.css"/>
+	<link rel="icon" href="images/x.png" /> <!-- lien de l'icone de la fenêtre -->
+	<script type="text/javascript" src="js/my_script.js"></script>
+	<script type="text/javascript">
+	 function openSlideMenu(){
+	   document.getElementById('side-menu').style.width = '150px';
+	   document.getElementById('main').style.marginLeft = '150px';
+	 }
+
+	 function closeSlideMenu(){
+	   document.getElementById('side-menu').style.width = '0';
+	   document.getElementById('main').style.marginLeft = '0';
+	 }
+	</script>
+</head>
+
+<body>
+	<header>
+		<video autoplay loop muted poster="DESRUH.jgp" id="bgvid">
+			<source src="SITE CONVERTURE.mp4" type="video/mp4"> <!-- Vidéo de fond header -->
+		</video>
+
+		<div id="titre">
+			<h1>LEX MURPHY</h1> <!-- Titre principal -->
+		</div>
+
+			<h2>by Thomas Cazottes & Jean Lagniaux</h2> <!-- Sous-Titre -->
+
+			<a href="javascript:void(0)" onclick="openSlideMenu()" id="hamburger"> <!-- Apparence menu_hamburger -->
+       			 <svg width="30" height="30">
+		            <path d="M0,5 30,5" stroke="rgba(51, 51, 51, 0.9)"  stroke-width="4"/>
+		            <path d="M0,14 30,14" stroke="rgba(51, 51, 51, 0.9)" stroke-width="4"/>
+		            <path d="M0,23 30,23" stroke="rgba(51, 51, 51, 0.9)" stroke-width="4"/>
+        		 </svg>
+     	    </a>
+ 	</header>
+
+  	<div id="side-menu" class="side-nav">
+	    <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+	    <a href="#titre">Accueil</a>	<!-- Liens menu -->
+	    <a href="#presta">Prestations</a> <!-- Liens menu -->
+	    <a href="#slider">Creations</a> <!-- Liens menu -->
+	    <a href="#bloc_pres">Présentation</a> <!-- Liens menu -->
+	    <a href="#bloc_cont">Contact</a> <!-- Liens menu -->
+	    <a href="thomascazottes.html">Jean Lagniaux</a> <!-- Liens menu -->
+	    <a href="jeanlagniaux.html">Thomas Cazottes</a> <!-- Liens menu -->
+ 	 </div>
+
+<section>
+	<div id="contenu_principal">
+		<div id="bloc1">
+			<h3 id="presta">PRESTATIONS <!-- Titre bloc1 --></h3>
+
+			<figure  class="rectangle_pres"><img src="https://i.imgur.com/CSIgtEp.jpg" alt="image"/> <!-- Lien .png rectangle vertical -->
+ 		    	<figcaption>
+				    <h3>Production audiovisuelle</h3> <!-- Titre rectangle -->
+				    <p>Tarif non-fixe</p>			  <!-- Tarif rectangle -->
+				    <h5>EN SAVOIR PLUS →</h5>	   	  <!-- Petit texte rectangle -->
+  				</figcaption><a href="#prod"></a> <!-- Lien vers bloc contact -->
+			</figure>
+
+			<figure class="rectangle_pres"><img src="https://i.imgur.com/mXj3SBA.jpg" alt="image"/>	<!-- Lien .png rectangle vertical -->
+			  	<figcaption>
+				    <h3>Enregistrement Studio</h3> <!-- Titre rectangle -->
+				    <p>10 € / heure</p>			   <!-- Tarif rectangle -->
+				    <h5>EN SAVOIR PLUS →</h5>      <!-- Petit texte rectangle -->
+			  	</figcaption><a href="#enregistrementstd"></a> <!-- Lien vers bloc contact -->
+			</figure>
+
+			<figure class="rectangle_pres"><img src="https://i.imgur.com/zMHQiNj.png" alt="image"/>	<!-- Lien .png rectangle vertical -->
+			  	<figcaption>
+				    <h3>Photographies</h3>    <!-- Titre rectangle -->
+				    <p>Galerie</p>     <!-- Tarif rectangle -->
+				    <h5>EN VOIR PLUS →</h5> <!-- Petit texte rectangle -->
+			  	</figcaption><a href="#photo_ancre"></a> <!-- Lien vers bloc contact -->
+			</figure>
+
+
+			<h3 id="prod">PRODUCTION AUDIOVISUELS</h3> <!-- Sous-titre bloc1 -->
+
+	    	<section class="second clearfix"> <!-- Vignettes vidéos -->
+	     		<article class="video">
+	        		<figure>
+	        			<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=2NAANCQoau0" target="_blank"><img class="videoThumb" src="images\Sofianne.jpg" alt="photo"></a> <!-- href=""== lien youtube --> <!-- src=""== lien image vignette -->
+	        		</figure>
+	        			<h2 class="videoTitle">Concert - Sofiane</h2> <!-- titre sous vignette -->
+	      		</article>
+
+	      		<article class="video">
+	        		<figure>
+	        			<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=8RRNsGiCwiA" target="_blank"><img class="videoThumb" src="images\passifacile.jpg" alt="photo"></a>
+	        		</figure>
+	        			<h2 class="videoTitle">Krom - c'est pas si facile</h2>
+	      		</article>
+
+	      		<article class="video">
+	        		<figure>
+	        			<a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/paG__3FBLzI" target="_blank"><img class="videoThumb" src="images\diediedie.jpg" alt="photo"></a>
+	        		</figure>
+	        			<h2 class="videoTitle">ALO - DIE DIE DIE</h2>
+	     		 </article>
+
+	      		<article class="video">
+	       			<figure>
+	        			<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=Amcjsh87MeE" target="_blank"><img class="videoThumb" src="images\corto.JPG" alt="photo"></a>
+	        		</figure>
+	        			<h2 class="videoTitle">Corto - aerodynamic</h2>
+	      		</article>
+
+	      		<article class="video">
+	        		<figure>
+	        			<a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/1swsXJuclGM" target="_blank"><img class="videoThumb" src="images\clab.jpg" alt="photo"></a>
+	        		</figure>
+	        			<h2 class="videoTitle">Live Radio - C-Lab</h2>
+	      		</article>
+
+	      		<article class="video">
+			        <figure>
+			        	<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=ZeIAT__EjBw" target="_blank"><img class="videoThumb" src="images\parano.png" alt="photo"></a>
+			        </figure>
+			        	<h2 class="videoTitle">Les Cromiqueurs - Parano</h2>
+			     </article>
+
+			     <article class="video">
+			        <figure>
+			        	<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=fJ5QEl8GNi8"><img class="videoThumb" src="images\mareenoir.jpg">
+			        </figure>
+			        	<h2 class="videoTitle">Les Cromiqueurs - Marée Noir</h2>
+			     </article>
+
+			     <article class="video">
+			        <figure>
+			        	<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=hhV7Vnw7dm0" target="_blank"><img class="videoThumb" src="images\joker.jpg" alt="photo"></a>
+			        </figure>
+			       		<h2 class="videoTitle">Les Cromiqueurs - Joker</h2>
+	     	     </article>
+
+	     	     <article class="video">
+	       			<figure>
+	        			<a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=OCU11EmCBJo" target="_blank"><img class="videoThumb" src="images\madmax.png" alt="photo"></a>
+	        		</figure>
+	        			<h2 class="videoTitle">ALO - MAD MAX</h2>
+	      		</article>
+
+	      		<article class="video">
+	        		<figure>
+	        			<a class="fancybox fancybox.iframe" href="https://www.facebook.com/TousEnShortFestival/videos/335083463906009/UzpfSTEwMDAwNDU0MzY2MzQxMjoxMDQ2MDk3MjM4ODg1MDU1/" target="_blank"><img class="videoThumb" src="images\aude.jpg" alt="photo"></a>
+	        		</figure>
+	        			<h2 class="videoTitle">Série - Métamorphose</h2>
+	      		</article>
+	    	</section>
+
+	    	<h2>Pour en savoir plus sur les modalité ainsi que les tarif veuillez nous contacter en cliquant <a href="#bloc_cont">ici</a>.</h2>
+
+			<h3 id="enregistrementstd">ENREGISTREMENTS STUDIO</h3> <!-- Sous-titre bloc1 -->
+
+			<div id="slider"> <!-- Diaporama photo -->
+				<figure>
+			 <!-- src=""== lien photo --><!-- height=""== hauteur image -->
+					<img src="images\mic.JPG" height="200" alt="microphone">
+					<img src="images\mic.JPG" height="200" alt="microphone">
+					<img src="images\mic.JPG" height="200" alt="microphone">
+					<img src="images\mic.JPG" height="200" alt="microphone">
+
+				</figure>
+			</div>
+
+			<h2>Nous proposons nos service d’enregistrement en studio pour 10€ par heure (masterisation et mixage inclu).<br> pour en savoir plus sur les modalité veuillez nous contacter en cliquant <a href="#bloc_cont">ici</a>.</h2>
+
+
+
+
+			<div>
+
+			<h3 id="photo_ancre">GALERIE</h3> <!-- Sous-titre bloc1 -->
+
+
+
+					<img id="lol" src="images\alojor.png">
+					<img id="lol" src="images\DSC_0515.JPG">
+					<img  id="lol" src="images\IMG_0402.JPG">
+
+					<img id="lol" src="images\IMG_6802.JPG">
+					<img id="lol" src="images\PANA1026.MOV.00_02_36_06.Image fixe001.jpg">
+					<img  id="lol" src="images\moto.jpg">
+
+					<img id="lol" src="images\27747162_877197215775059_1442813826_o - Copie.jpg">
+					<img id="lol" src="images\PANA1031.MOV.00_12_24_00.Image fixe001.jpg">
+					<img  id="lol" src="images\CANON DEBUT.00_15_42_03.Image fixe009.jpg">
+
+					<img id="lol" src="images\DSC_0221_Moment7.jpg">
+					<img id="lol" src="images\IMG_9905.CR2.png">
+					<img id="lol" src="images\PARANOIA V1 CLIP CROMI.00_01_03_08.Image fixe006.jpg">
+
+			</div>
+
+			<div id="bloc_qui"> <!-- Bloc principal de contenu -->
+				<p style="color: white;"> ° </p> <!-- Titre bloc_qui -->
+				<h3 id="bjr">QUI SOMMES NOUS ?</h3> <!-- Titre bloc_qui -->
+
+
+				<div id="bloc_pres">
+					<div id="bloc_thomas">
+						<img src="https://i.imgur.com/LFVMrog.jpg" width="560px" height="600px"> <!-- lien photo et résolution -->
+							<div class="bloc_contenu">
+								<p class="titre_pres">THOMAS CAZOTTES</p> <!-- titre presentation -->
+								<p class="sous_titre_pres">Directeur de la photo, réalisateur, opérateur montage et caméra</p> <!-- sous-titre presentation -->
+								<p class="contenu_pres">Thomas Cazottes à 19 ans, étudie actuellement en BTS Audio-visuel à Cannes.</p> <!-- contenu presentation -->
+									<div class="insta">
+										<a href="#">
+											<p class="contenu_pres"><a href="https://www.instagram.com/thomascazottes/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMVSURBVGhD7dlLqE1RHMfxK2/yDANkwoRSBsQEIY9SjCQDDORVHjMjM1MTIQwwYICI8hh4pZTHTBiQ8s5rQN7k+f3VXbXa/c45a5+717mT86tP3U7/u/b9n7v3Wmvv3dFOO+1kzxAM66JeaGn6YRmO4gm+418F/uA1rmIrRiNLemAVnsH9IVXTF7QTQ1FZBuIk3AFze4zJ6HIG4DbcQVrlM6aj6eh0OgU3eKu9wlg0FV0TbtDuchalo9npKdyAOV3AXnyJPovNQqloinUD5XQRIavhak6gVI7ADZTTYYTMgav5iL5IjhY7N1BZb3AXz/Gz87NafmAjFuBO52fOVCRHg7pBUlzDSgxHHG1D5mE/GjVVz1IkZTDcAI1oi7EYKZmAS3DjNLIOSdEm0A1Qz32Unef1H9oHN149Ov2SUrYRXQfFJrTp24Eb0DR+DwdRnD616J6BG7eWbI0UT6c1+AZXK5oR+yNkEN7C1TpZGtGFHUdNuLqic+iJkE1wdU6WRjQ7hYzBV7g6Zy1CdMzUmbLyRv4inmJ1Tbi6Wh4iTuosVnkjOq/j3ISrq2ccQvbA1RRV3oim3DjN7AZmIGQ7XE1R5Y3otjeOtiKurp6JCNGtraspqrwRbTN6I+QQXF0tHxD//nG4uqLKG5G5CJkJV1PLLoRoKk5dS7I0cgBxUrf/LzASIfPh6pwsjej0Go8QPaw4D1cbvMQUhGibcguu1snSiFxBvErrZy12DxDXvcdujECcMqu6ZGtEdI+hb7YYrROaYichvrBDFuIX3Ji1ZG1ETkMbwJSo6c0o24QkN6L7BD2LdYM08g46VXRz5qLTThd2M7uAYDmSo3sMN0gqTQKXoWtCK7YWu2NQo66+jFKPhHQBu0G6m86UeNpumC1wA3W36ygV3VtU9e6jShtQOqmbuFZ5BDeFN4xeien9hBu01X5jEZqOXrJ8ghu8lbahy9HKrPcT7gC56T9RSRMhem6l9xPuYLnomtAWJktmQzdAuU43rROaYtejD7JHj/anYQm009Xz2K5YAd2YjUI77bTTTq10dPwH1ojrjV8EiQIAAAAASUVORK5CYII=" width="30px" height="30px"></a>
+											INSTAGRAM</p> <!-- lien instagram --> <!-- lien logo Instagram et résolution -->
+										</a>
+									</div>
+							</div>
+					</div>
+
+
+
+					<div id="bloc_jean">
+						<img src="https://i.imgur.com/JPq0V6u.png" width="560px" height="600px">
+							<div class="bloc_contenu">
+								<p class="titre_pres">JEAN LAGNIAUX</p>
+								<p class="sous_titre_pres">Assistant de réalisation, enregistrement studio, opérateur montage et caméra</p>
+								<p class="contenu_pres">Jean Lagniaux à 19 ans et étudie actuellement à l'IUT de Laval en DUT Informatique.</p>
+								<div class="insta">
+									<a href="#">
+										<p class="contenu_pres"><a href="https://www.instagram.com/jean_lgnx/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMVSURBVGhD7dlLqE1RHMfxK2/yDANkwoRSBsQEIY9SjCQDDORVHjMjM1MTIQwwYICI8hh4pZTHTBiQ8s5rQN7k+f3VXbXa/c45a5+717mT86tP3U7/u/b9n7v3Wmvv3dFOO+1kzxAM66JeaGn6YRmO4gm+418F/uA1rmIrRiNLemAVnsH9IVXTF7QTQ1FZBuIk3AFze4zJ6HIG4DbcQVrlM6aj6eh0OgU3eKu9wlg0FV0TbtDuchalo9npKdyAOV3AXnyJPovNQqloinUD5XQRIavhak6gVI7ADZTTYYTMgav5iL5IjhY7N1BZb3AXz/Gz87NafmAjFuBO52fOVCRHg7pBUlzDSgxHHG1D5mE/GjVVz1IkZTDcAI1oi7EYKZmAS3DjNLIOSdEm0A1Qz32Unef1H9oHN149Ov2SUrYRXQfFJrTp24Eb0DR+DwdRnD616J6BG7eWbI0UT6c1+AZXK5oR+yNkEN7C1TpZGtGFHUdNuLqic+iJkE1wdU6WRjQ7hYzBV7g6Zy1CdMzUmbLyRv4inmJ1Tbi6Wh4iTuosVnkjOq/j3ISrq2ccQvbA1RRV3oim3DjN7AZmIGQ7XE1R5Y3otjeOtiKurp6JCNGtraspqrwRbTN6I+QQXF0tHxD//nG4uqLKG5G5CJkJV1PLLoRoKk5dS7I0cgBxUrf/LzASIfPh6pwsjej0Go8QPaw4D1cbvMQUhGibcguu1snSiFxBvErrZy12DxDXvcdujECcMqu6ZGtEdI+hb7YYrROaYichvrBDFuIX3Ji1ZG1ETkMbwJSo6c0o24QkN6L7BD2LdYM08g46VXRz5qLTThd2M7uAYDmSo3sMN0gqTQKXoWtCK7YWu2NQo66+jFKPhHQBu0G6m86UeNpumC1wA3W36ygV3VtU9e6jShtQOqmbuFZ5BDeFN4xeien9hBu01X5jEZqOXrJ8ghu8lbahy9HKrPcT7gC56T9RSRMhem6l9xPuYLnomtAWJktmQzdAuU43rROaYtejD7JHj/anYQm009Xz2K5YAd2YjUI77bTTTq10dPwH1ojrjV8EiQIAAAAASUVORK5CYII=" width="30px" height="30px"></a>
+										INSTAGRAM</p>
+									</a>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div id="bloc_cont">
+				<h3>
+				CONTACT
+				</h3>
+
+				<div id="conteneur_reseaux">
+
+					<p class="text_logo">
+						<a href="https://www.facebook.com/Lexmurphyproduction/" target="_blank"><img src="https://i.imgur.com/0IXH2aJ.png" width="100px" height="100px" id="facebook_logo"></a>
+			    	</p>
+
+			    	<p class="text_logo">
+			   			 <a href="mailto:lex.murphy@gmail.com" target="_blank"><img src="https://i.imgur.com/y1OI5iI.png" id="mail_logo" height="100px" width="100px">
+						 </a><span>jeanlagniaux35@gmail.com</span>
+			   		</p>
+
+			   		<p class="text_logo">
+			   			 <a href="mailto:lex.murphy@gmail.com" target="_blank"><img src="https://i.imgur.com/y1OI5iI.png" id="mail_logo" height="100px" width="100px">
+						 </a><span>thomascazottes35@gmail.com</span>
+			   		</p>
+
+				    <p class="text_logo">
+						<a href="https://www.youtube.com/channel/UC0iGGZpe03IPO5bq_aiiw1w" target="_blank"><img src="https://i.imgur.com/CstOrcY.png" width="100px" height="100px" id="youtube_logo"></a>
+					</p>
+				</div> <!-- div #conteneur_reseaux -->
+			</div>
+
+	</section>
+
+
+
+	<footer>
+
+			<div class="mentions1" >
+					designed and developped by <a href='https://www.linkedin.com/in/jean-lagniaux-742811171/' target="_blank"> Jean Lagniaux</a> & <a href='https://www.linkedin.com/in/axel-dahirel/' target="_blank"> Axel Dahirel</a><br>
+
+			</div>
+
+
+	</footer>
+
+</body>
+</html>
